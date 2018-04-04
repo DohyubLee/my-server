@@ -1,0 +1,29 @@
+{
+  "name": "my-server",
+  "version": "1.0.0",
+  "description": "dohyub's server of board",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DohyubLee/my-server.git"
+  },
+  "author": "dohyubLee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DohyubLee/my-server/issues"
+  },
+  "homepage": "https://github.com/DohyubLee/my-server#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "express-mysql-session": "^1.2.3",
+    "express-session": "^1.15.6",
+    "mysql": "^2.15.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "pbkdf2-password": "^1.2.1"
+  }
+}
