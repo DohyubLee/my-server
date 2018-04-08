@@ -1,4 +1,5 @@
 const express = require('express');
+var cors = require('cors');
 const session = require('express-session');
 const bkfd2Password = require("pbkdf2-password");  //암호 인증 모듈
 const MySQLStore = require('express-mysql-session')(session);
@@ -9,6 +10,7 @@ const pool = require('./db-config').connection;
 
 const app = express();
 
+app.use(cors());
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 app.use(function(req, res, next) {
